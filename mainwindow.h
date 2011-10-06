@@ -16,8 +16,6 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_2_clicked();
-
     void on_pushButton_Program_clicked();
 
     void on_pushButton_Connect_clicked();

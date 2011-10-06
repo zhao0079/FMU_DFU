@@ -11,8 +11,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    opfwimage.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    opfwimage.h
 
 FORMS    += mainwindow.ui
+
+

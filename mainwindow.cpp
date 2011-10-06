@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -25,8 +26,9 @@ void MainWindow::on_pushButton_Connect_clicked()
 
 void MainWindow::on_toolButton_PickFile_clicked()
 {
+	QString file_name;
     // XXX rinky, should generate a better version, see docs
 
-    fileName = QFileDialog::getOpenFileName(this,
+	file_name = QFileDialog::getOpenFileName(this,
          tr("Select Firmware File"), "/", tr("OpenPilot Firmware (*.ofw)"));
 }
